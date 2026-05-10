@@ -1,0 +1,11 @@
+# Render service configuration (minimal).
+# Do NOT store secrets here; set them in the Render dashboard.
+services:
+  - type: web
+    name: DAWA-Semana07
+    env: node
+    plan: free
+    region: oregon
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars: []
